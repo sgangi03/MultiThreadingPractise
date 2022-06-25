@@ -3,7 +3,7 @@ package DelayQueue;
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
 
-public class DelayImp implements Delayed{
+public class DelayImp implements Delayed {
 
 	public int value;
 	public long expTime;
@@ -22,7 +22,7 @@ public class DelayImp implements Delayed{
 		return 1;
 	else return 0;
 	}
-	@Override
+@Override
 	public long getDelay(TimeUnit unit) {
 		long time=expTime-System.currentTimeMillis();
 		return unit.convert(time, TimeUnit.MILLISECONDS);
