@@ -16,7 +16,7 @@ public class main {
 		List<Future<String>> futlist=new ArrayList<>();
 		ExecutorService ex=Executors.newFixedThreadPool(10);
 		for(int i=0;i<100;i++) {
-		Thread2 t2=new Thread2();
+		Thread2 t2=new  Thread2();
 		
 		futlist.add(ex.submit(t2));
 		}
